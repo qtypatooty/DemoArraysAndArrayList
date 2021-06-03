@@ -8,24 +8,19 @@ import android.widget.TextView;
 public class ArrayActivity extends AppCompatActivity {
 
     TextView tv;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_array);
 
-        tv = findViewById(R.id.textView1);
+        tv = findViewById(R.id.textView);
 
         //continue view the code in the worksheet
-
-        String [] fruits = new String [1];
+        String [] fruits = new String [3];
         fruits[0] = "apple";
         fruits[1] = "banana";
         fruits[2] = "cherry";
 
-        fruits[1]=null;
-        fruits[2]="durian";
-        fruits[1]="mango";
         System.out.println("Size is :" + fruits.length);
         String msg = "";
         for (int i = 0;i<fruits.length;i++){

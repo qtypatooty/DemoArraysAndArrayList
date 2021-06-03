@@ -20,12 +20,12 @@ public class ArrayListActivity extends AppCompatActivity {
 
         //continue view the code in the worksheet
         ArrayList<String> al = new ArrayList<String>();
-        al.add("Quick");
-        al.add("Brown");
-        al.add("Fox");
-        al.remove("Fox");
-        al.set(1,"Silver");
-        al.add("Happy Ending");
+        al.add("apple");
+        al.add("banana");
+        al.add("cherry");
+        al.add(3,"durian");
+        al.remove(0);
+        al.set(al.size()-1,"dragonfruit")
         System.out.println("Size is : " +al.size());
         String msg = "";
         for (int i = 0;i<al.size();i++){
@@ -34,6 +34,6 @@ public class ArrayListActivity extends AppCompatActivity {
 
         System.out.println(msg);
         tv.setText(msg);
-
+        String theFruit = al.get(1);
     }
 }
