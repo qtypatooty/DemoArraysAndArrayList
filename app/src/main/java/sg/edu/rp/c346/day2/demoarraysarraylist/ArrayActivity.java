@@ -18,7 +18,21 @@ public class ArrayActivity extends AppCompatActivity {
 
         //continue view the code in the worksheet
 
+        String [] fruits = new String [1];
+        fruits[0] = "apple";
+        fruits[1] = "banana";
+        fruits[2] = "cherry";
 
+        fruits[1]=null;
+        fruits[2]="durian";
+        fruits[1]="mango";
+        System.out.println("Size is :" + fruits.length);
+        String msg = "";
+        for (int i = 0;i<fruits.length;i++){
+            msg +=fruits[i] + "\n";
+        }
 
+        System.out.println(msg);
+        tv.setText(msg);
     }
 }
